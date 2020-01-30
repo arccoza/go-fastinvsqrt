@@ -12,12 +12,12 @@ const (
 
 func main() {
   fmt.Println("Hello World")
-  fmt.Println(InvSqrt64(1.6))
+  fmt.Println(invSqrt64(1.6))
   fmt.Println(FastInvSqrt32(1.6))
   fmt.Println(FastInvSqrt64(1.6))
 }
 
-func InvSqrt64(n float64) float64 {
+func invSqrt64(n float64) float64 {
   return 1 / math.Sqrt(n)
 }
 

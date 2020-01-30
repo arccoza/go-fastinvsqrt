@@ -12,7 +12,7 @@ var result64 float64
 func benchmarkInvSqrt64(val float64, b *testing.B) {
 	var r float64
     for i := 0; i < b.N; i++ {
-        r = InvSqrt64(val)
+        r = invSqrt64(val)
     }
 	result64 = r
 }
