@@ -1,13 +1,19 @@
-package main
+package fis
 
 import (
 	"testing"
 	"math"
+	"fmt"
 )
 
-const val = 1.6
 var result32 float32
 var result64 float64
+
+func init() {
+  fmt.Println(invSqrt64(1.6))
+  fmt.Println(FastInvSqrt32(1.6))
+  fmt.Println(FastInvSqrt64(1.6))
+}
 
 func benchmarkInvSqrt64(val float64, b *testing.B) {
 	var r float64
